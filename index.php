@@ -7,6 +7,22 @@
     <title>Calendário</title>
 </head>
 <body>
+    <?php 
+        function linha(){
+            return"
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            ";
+        }
+    ?>
+
     <h1><?php echo "Calendário"; ?></h1>
     <table border="1">
         <tr>
@@ -17,6 +33,11 @@
             <th>Qui</th>
             <th>Sex</th>
             <th>Sáb</th>
+            <?php echo linha(); ?>
+            <?php echo linha(); ?>
+            <?php echo linha(); ?>
+            <?php echo linha(); ?>
+            <?php echo linha(); ?>
         </tr>
     </table>
 </body>
