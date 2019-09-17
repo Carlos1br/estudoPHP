@@ -23,6 +23,25 @@
         }
     ?>
 
+    <?php 
+        function calendario(){
+            $calendario = '';
+            $dia = 1;
+            $semana = [];
+
+            while ($dia <= 31){
+                array_push($semana, $dia);
+
+                if(count($semana) == 7){
+                    $calendario .= linha($semana);
+                    $semana = [];
+                }
+                $dia++;
+            }
+            return $calendario;
+        }
+    ?>
+
     <h1><?php echo "Calendário"; ?></h1>
     <table border="1">
         <tr>
