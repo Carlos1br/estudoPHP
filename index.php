@@ -52,11 +52,7 @@
             <th>Qui</th>
             <th>Sex</th>
             <th>Sáb</th>
-            <?php echo linha(); ?>
-            <?php echo linha(); ?>
-            <?php echo linha(); ?>
-            <?php echo linha(); ?>
-            <?php echo linha(); ?>
+            <?php echo calendario(); ?>
         </tr>
     </table>
 </body>
