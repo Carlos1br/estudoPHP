@@ -8,16 +8,16 @@
 </head>
 <body>
     <?php 
-        function linha(){
+        function linha($semana){
             return"
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>{$semana[0]}</td>
+                    <td>{$semana[1]}</td>
+                    <td>{$semana[2]}</td>
+                    <td>{$semana[3]}</td>
+                    <td>{$semana[4]}</td>
+                    <td>{$semana[5]}</td>
+                    <td>{$semana[6]}</td>
                 </tr>
             ";
         }
